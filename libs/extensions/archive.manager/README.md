@@ -58,8 +58,8 @@ The input archive is decompressed, each file within the archive is passed to the
     
   The following attributes are required:
     - **libVersion** specifies the Glasswall Engine that should be used, the possible values are:
-        - **Rebuild** – Glasswall Rebuild Engine which can be found [here](https://github.com/filetrust/sdk-rebuild-eval)
-        - **Editor** – Glasswall Editor Engine which can be found [here](https://github.com/filetrust/sdk-editor-eval)
+        - **Classic** – Glasswall Rebuild Engine which can be found [here](https://github.com/filetrust/sdk-rebuild-eval)
+        - **Core2** – Glasswall Editor Engine which can be found [here](https://github.com/filetrust/sdk-editor-eval)
     - **defaultCompression** is the fallback archive format that should be used if unable to compress back to the original format (This applies to file types such as RAR where only decompression support is available)
     
     The following attributes are optional:
