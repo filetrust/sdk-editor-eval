@@ -1,6 +1,6 @@
 # Glasswall Editor SDK (Evaluation Version)
 
-Evaluation versions of the Glasswall Editor SDK expires after 30 days.
+Evaluation versions of the Glasswall Editor SDK which expires after 30 days.
 
 ## Version
 
