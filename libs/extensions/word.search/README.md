@@ -3,7 +3,7 @@
 # Dependancies
 Glasswall Word Search has the following dependacies:
 - Glasswall Archive Manager (libglasswall.archive.manager) which can be found [here.](https://github.com/filetrust/sdk-editor-eval/tree/master/libs/extensions/archive.manager)
-- Glasswall Editor libraries which can be found [here.](https://github.com/filetrust/sdk-editor/tree/master/libs/editor)
+- Glasswall Editor libraries which can be found [here.](https://github.com/filetrust/sdk-editor-eval/tree/master/libs/editor)
 
 **NOTE** The libraries above **must** be placed in the same directory as the Word Search library (libglasswall.word.search)
 
