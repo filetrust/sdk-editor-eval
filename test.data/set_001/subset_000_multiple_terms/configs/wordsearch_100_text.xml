@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <pdfConfig>
+     <watermark>Glasswall Protected</watermark>
+        <acroform>sanitise</acroform>
+        <metadata>sanitise</metadata>
+        <javascript>sanitise</javascript>
+        <actions_all>sanitise</actions_all>
+        <embedded_files>sanitise</embedded_files>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+        <embedded_images>sanitise</embedded_images>
+    </pdfConfig>
+    <wordConfig>
+      <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <embedded_files>sanitise</embedded_files>
+        <embedded_images>sanitise</embedded_images>
+        <review_comments>sanitise</review_comments>
+        <dynamic_data_exchange>sanitise</dynamic_data_exchange>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+    </wordConfig>
+    <pptConfig>
+     <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <embedded_files>sanitise</embedded_files>
+        <embedded_images>sanitise</embedded_images>
+        <review_comments>sanitise</review_comments>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+    </pptConfig>
+    <xlsConfig>
+    <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <embedded_files>sanitise</embedded_files>
+        <embedded_images>sanitise</embedded_images>
+        <review_comments>sanitise</review_comments>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+    </xlsConfig>
+
+    <sysConfig>
+        <interchange_type>xml</interchange_type>
+        <interchange_pretty>false</interchange_pretty>
+    </sysConfig>
+
+    <textSearchConfig>
+		<textList>
+            <textItem><text>Godwin</text><textSetting replacementChar="a">redact</textSetting></textItem>
+            <textItem><text>July</text><textSetting replacementChar="b">redact</textSetting></textItem>
+            <textItem><text>EBook</text><textSetting replacementChar="c">redact</textSetting></textItem>
+            <textItem><text>keeping</text><textSetting replacementChar="d">redact</textSetting></textItem>
+            <textItem><text>schiavi</text><textSetting replacementChar="e">redact</textSetting></textItem>
+            <textItem><text>shall</text><textSetting replacementChar="f">redact</textSetting></textItem>
+            <textItem><text>Ancient</text><textSetting replacementChar="g">redact</textSetting></textItem>
+            <textItem><text>Before</text><textSetting replacementChar="h">redact</textSetting></textItem>
+            <textItem><text>Certainly</text><textSetting replacementChar="i">redact</textSetting></textItem>
+            <textItem><text>Unhappy</text><textSetting replacementChar="j">redact</textSetting></textItem>
+            <textItem><text>abandoned</text><textSetting replacementChar="k">redact</textSetting></textItem>
+            <textItem><text>able</text><textSetting replacementChar="l">redact</textSetting></textItem>
+            <textItem><text>abode</text><textSetting replacementChar="m">redact</textSetting></textItem>
+            <textItem><text>about</text><textSetting replacementChar="n">redact</textSetting></textItem>
+            <textItem><text>above</text><textSetting replacementChar="o">redact</textSetting></textItem>
+            <textItem><text>absence</text><textSetting replacementChar="p">redact</textSetting></textItem>
+            <textItem><text>accent</text><textSetting replacementChar="q">redact</textSetting></textItem>
+            <textItem><text>accents</text><textSetting replacementChar="r">redact</textSetting></textItem>
+            <textItem><text>accident</text><textSetting replacementChar="s">redact</textSetting></textItem>
+            <textItem><text>accidents</text><textSetting replacementChar="t">redact</textSetting></textItem>
+            <textItem><text>accompanied</text><textSetting replacementChar="u">redact</textSetting></textItem>
+            <textItem><text>accomplish</text><textSetting replacementChar="v">redact</textSetting></textItem>
+            <textItem><text>according</text><textSetting replacementChar="w">redact</textSetting></textItem>
+            <textItem><text>accordingly</text><textSetting replacementChar="x">redact</textSetting></textItem>
+            <textItem><text>accounts</text><textSetting replacementChar="y">redact</textSetting></textItem>
+            <textItem><text>accustomed</text><textSetting replacementChar="z">redact</textSetting></textItem>
+            <textItem><text>acquainted</text><textSetting replacementChar="A">redact</textSetting></textItem>
+            <textItem><text>acquire</text><textSetting replacementChar="B">redact</textSetting></textItem>
+            <textItem><text>acquirement</text><textSetting replacementChar="C">redact</textSetting></textItem>
+            <textItem><text>acquitted</text><textSetting replacementChar="D">redact</textSetting></textItem>
+            <textItem><text>across</text><textSetting replacementChar="E">redact</textSetting></textItem>
+            <textItem><text>active</text><textSetting replacementChar="F">redact</textSetting></textItem>
+            <textItem><text>actually</text><textSetting replacementChar="G">redact</textSetting></textItem>
+            <textItem><text>added</text><textSetting replacementChar="H">redact</textSetting></textItem>
+            <textItem><text>addressed</text><textSetting replacementChar="I">redact</textSetting></textItem>
+            <textItem><text>Adieu</text><textSetting replacementChar="J">redact</textSetting></textItem>
+            <textItem><text>admiration</text><textSetting replacementChar="K">redact</textSetting></textItem>
+            <textItem><text>adopted</text><textSetting replacementChar="L">redact</textSetting></textItem>
+            <textItem><text>adored</text><textSetting replacementChar="M">redact</textSetting></textItem>
+            <textItem><text>advanced</text><textSetting replacementChar="N">redact</textSetting></textItem>
+            <textItem><text>advancement</text><textSetting replacementChar="O">redact</textSetting></textItem>
+            <textItem><text>advancing</text><textSetting replacementChar="P">redact</textSetting></textItem>
+            <textItem><text>advantage</text><textSetting replacementChar="Q">redact</textSetting></textItem>
+            <textItem><text>adventurer</text><textSetting replacementChar="R">redact</textSetting></textItem>
+            <textItem><text>adversity</text><textSetting replacementChar="S">redact</textSetting></textItem>
+            <textItem><text>affairs</text><textSetting replacementChar="T">redact</textSetting></textItem>
+            <textItem><text>affection</text><textSetting replacementChar="U">redact</textSetting></textItem>
+            <textItem><text>affectionate</text><textSetting replacementChar="V">redact</textSetting></textItem>
+            <textItem><text>affirmative</text><textSetting replacementChar="W">redact</textSetting></textItem>
+            <textItem><text>afflicted</text><textSetting replacementChar="X">redact</textSetting></textItem>
+            <textItem><text>afford</text><textSetting replacementChar="Y">redact</textSetting></textItem>
+            <textItem><text>afforded</text><textSetting replacementChar="Z">redact</textSetting></textItem>
+            <textItem><text>Africa</text><textSetting replacementChar="1">redact</textSetting></textItem>
+            <textItem><text>after</text><textSetting replacementChar="2">redact</textSetting></textItem>
+            <textItem><text>again</text><textSetting replacementChar="3">redact</textSetting></textItem>
+            <textItem><text>age</text><textSetting replacementChar="4">redact</textSetting></textItem>
+            <textItem><text>ages</text><textSetting replacementChar="5">redact</textSetting></textItem>
+            <textItem><text>agitation</text><textSetting replacementChar="6">redact</textSetting></textItem>
+            <textItem><text>ago</text><textSetting replacementChar="7">redact</textSetting></textItem>
+            <textItem><text>agree</text><textSetting replacementChar="8">redact</textSetting></textItem>
+            <textItem><text>agreeable</text><textSetting replacementChar="9">redact</textSetting></textItem>
+            <textItem><text>Al</text><textSetting replacementChar="0">redact</textSetting></textItem>
+            <textItem><text>alarmed</text><textSetting replacementChar="!">redact</textSetting></textItem>
+            <textItem><text>albatross</text><textSetting replacementChar="£">redact</textSetting></textItem>
+            <textItem><text>alive</text><textSetting replacementChar="$">redact</textSetting></textItem>
+            <textItem><text>allow</text><textSetting replacementChar="%">redact</textSetting></textItem>
+            <textItem><text>allusion</text><textSetting replacementChar="^">redact</textSetting></textItem>
+            <textItem><text>almost</text><textSetting replacementChar="@">redact</textSetting></textItem>
+            <textItem><text>alone</text><textSetting replacementChar="*">redact</textSetting></textItem>
+            <textItem><text>already</text><textSetting replacementChar="(">redact</textSetting></textItem>
+            <textItem><text>also</text><textSetting replacementChar=")">redact</textSetting></textItem>
+            <textItem><text>alter</text><textSetting replacementChar="+">redact</textSetting></textItem>
+            <textItem><text>although</text><textSetting replacementChar="[">redact</textSetting></textItem>
+            <textItem><text>amassed</text><textSetting replacementChar="]">redact</textSetting></textItem>
+            <textItem><text>ambition</text><textSetting replacementChar="{">redact</textSetting></textItem>
+            <textItem><text>ameliorate</text><textSetting replacementChar="}">redact</textSetting></textItem>
+            <textItem><text>amend</text><textSetting replacementChar=";">redact</textSetting></textItem>
+            <textItem><text>America?</text><textSetting replacementChar=":">redact</textSetting></textItem>
+            <textItem><text>amiable</text><textSetting replacementChar="*">redact</textSetting></textItem>
+            <textItem><text>among</text><textSetting replacementChar="@">redact</textSetting></textItem>
+            <textItem><text>ample</text><textSetting replacementChar="~">redact</textSetting></textItem>
+            <textItem><text>ancestors</text><textSetting replacementChar="*">redact</textSetting></textItem>
+            <textItem><text>anew</text><textSetting replacementChar="\">redact</textSetting></textItem>
+            <textItem><text>angel</text><textSetting replacementChar="|">redact</textSetting></textItem>
+            <textItem><text>animated</text><textSetting replacementChar="*">redact</textSetting></textItem>
+            <textItem><text>animation</text><textSetting replacementChar=",">redact</textSetting></textItem>
+            <textItem><text>another</text><textSetting replacementChar=">">redact</textSetting></textItem>
+            <textItem><text>answer</text><textSetting replacementChar=".">redact</textSetting></textItem>
+            <textItem><text>antique</text><textSetting replacementChar="?">redact</textSetting></textItem>
+            <textItem><text>anxious</text><textSetting replacementChar="*">redact</textSetting></textItem>
+            <textItem><text>anyone</text><textSetting replacementChar="a">redact</textSetting></textItem>
+            <textItem><text>anywhere</text><textSetting replacementChar="b">redact</textSetting></textItem>
+            <textItem><text>apparently</text><textSetting replacementChar="c">redact</textSetting></textItem>
+            <textItem><text>apparition</text><textSetting replacementChar="d">redact</textSetting></textItem>
+            <textItem><text>appear</text><textSetting replacementChar="e">redact</textSetting></textItem>
+            <textItem><text>appearance</text><textSetting replacementChar="f">redact</textSetting></textItem>
+            <textItem><text>appeared</text><textSetting replacementChar="g">redact</textSetting></textItem>
+            <textItem><text>appears</text><textSetting replacementChar="h">redact</textSetting></textItem>
+            <textItem><text>appreciate</text><textSetting replacementChar="i">redact</textSetting></textItem>
+            <textItem><text>approve</text><textSetting replacementChar="j">redact</textSetting></textItem>
+		</textList>
+	</textSearchConfig>
+</config>
+

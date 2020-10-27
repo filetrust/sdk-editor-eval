@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <pdfConfig>
+        <acroform>allow</acroform>
+        <actions_all>allow</actions_all>
+        <internal_hyperlinks>allow</internal_hyperlinks>
+        <external_hyperlinks>allow</external_hyperlinks>
+        <embedded_files>allow</embedded_files>
+        <javascript>allow</javascript>
+        <metadata>allow</metadata>
+    </pdfConfig>
+    <wordConfig>
+        <embedded_files>allow</embedded_files>
+        <internal_hyperlinks>allow</internal_hyperlinks>
+        <external_hyperlinks>allow</external_hyperlinks>
+        <macros>allow</macros>
+        <metadata>allow</metadata>
+        <review_comments>allow</review_comments>
+    </wordConfig>
+    <pptConfig>
+        <embedded_files>allow</embedded_files>
+        <internal_hyperlinks>allow</internal_hyperlinks>
+        <external_hyperlinks>allow</external_hyperlinks>
+        <macros>allow</macros>
+        <metadata>allow</metadata>
+        <review_comments>allow</review_comments>
+    </pptConfig>
+    <xlsConfig>
+        <embedded_files>allow</embedded_files>
+        <internal_hyperlinks>allow</internal_hyperlinks>
+        <external_hyperlinks>allow</external_hyperlinks>
+        <macros>allow</macros>
+        <metadata>allow</metadata>
+        <review_comments>allow</review_comments>
+    </xlsConfig>
+    <sysConfig>
+        <interchange_type>xml</interchange_type>
+        <interchange_pretty>true</interchange_pretty>
+    </sysConfig>
+  
+    <textSearchConfig libVersion="core2">
+		<textList>
+			<textItem>
+			  <text>generic</text>
+			  <textSetting replacementChar="*">redact</textSetting>
+			</textItem>
+		</textList>
+	</textSearchConfig>
+</config>
+

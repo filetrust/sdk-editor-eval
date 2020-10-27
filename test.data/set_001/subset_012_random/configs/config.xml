@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <pdfConfig>
+        <acroform>sanitise</acroform>
+        <actions_all>sanitise</actions_all>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+        <embedded_files>sanitise</embedded_files>
+        <javascript>sanitise</javascript>
+        <metadata>sanitise</metadata>
+    </pdfConfig>
+    <wordConfig>
+        <embedded_files>sanitise</embedded_files>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+        <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <review_comments>sanitise</review_comments>
+    </wordConfig>
+    <pptConfig>
+        <embedded_files>sanitise</embedded_files>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+        <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <review_comments>sanitise</review_comments>
+    </pptConfig>
+    <xlsConfig>
+        <embedded_files>sanitise</embedded_files>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+        <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <review_comments>sanitise</review_comments>
+    </xlsConfig>
+    <sysConfig>
+        <interchange_type>xml</interchange_type>
+        <interchange_pretty>true</interchange_pretty>
+    </sysConfig>
+  
+    <textSearchConfig libVersion="core2">
+		<textList>
+			<textItem>
+			  <text>Authorities</text>
+			  <textSetting replacementChar="*">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>12345</text>
+			  <textSetting replacementChar="*">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>abcde</text>
+			  <textSetting replacementChar="*">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>Generic</text>
+			  <textSetting replacementChar="*">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>Hello</text>
+			  <textSetting replacementChar="!">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>Meow</text>
+			  <textSetting replacementChar="!">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>Unquestionably</text>
+			  <textSetting replacementChar="!">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>W0rld</text>
+			  <textSetting replacementChar="#">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>Test</text>
+			  <textSetting replacementChar="@">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>Dangerous</text>
+			  <textSetting replacementChar="#">redact</textSetting>
+			</textItem>			
+			<textItem>
+			  <text>WAVE</text>
+			  <textSetting>allow</textSetting>
+			</textItem>	
+			<textItem>
+			  <text>fmt</text>
+			  <textSetting>allow</textSetting>
+			</textItem>
+			<textItem>
+			  <text>This is a </text>
+			  <textSetting replacementChar="*">redact</textSetting>
+			</textItem>
+		</textList>
+	</textSearchConfig>
+</config>

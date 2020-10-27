@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    
+    <sysConfig>
+        <interchange_type>xml</interchange_type>
+        <interchange_pretty>false</interchange_pretty>
+    </sysConfig>
+    
+    <textSearchConfig>
+		<textList>
+			<textItem>
+			  <text>Project</text>
+			  <textSetting replacementChar="A">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>Gutenberg</text>
+			  <textSetting replacementChar="B">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>Frankenstein</text>
+			  <textSetting replacementChar="C">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>Mary</text>
+			  <textSetting replacementChar="D">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>Wollstonecraft</text>
+			  <textSetting replacementChar="E">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>Godwin</text>
+			  <textSetting replacementChar="F">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>Shelley</text>
+			  <textSetting replacementChar="G">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>eBook</text>
+			  <textSetting replacementChar="H">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>anyone</text>
+			  <textSetting replacementChar="I">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>restrictions</text>
+			  <textSetting replacementChar="J">redact</textSetting>
+			</textItem>
+		</textList>
+	</textSearchConfig>
+</config>
+

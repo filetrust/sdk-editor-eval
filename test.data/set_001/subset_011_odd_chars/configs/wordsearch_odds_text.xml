@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <pdfConfig>
+     <watermark>Glasswall Protected</watermark>
+        <acroform>sanitise</acroform>
+        <metadata>sanitise</metadata>
+        <javascript>sanitise</javascript>
+        <actions_all>sanitise</actions_all>
+        <embedded_files>sanitise</embedded_files>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+        <embedded_images>sanitise</embedded_images>
+    </pdfConfig>
+    <wordConfig>
+      <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <embedded_files>sanitise</embedded_files>
+        <embedded_images>sanitise</embedded_images>
+        <review_comments>sanitise</review_comments>
+        <dynamic_data_exchange>sanitise</dynamic_data_exchange>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+    </wordConfig>
+    <pptConfig>
+     <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <embedded_files>sanitise</embedded_files>
+        <embedded_images>sanitise</embedded_images>
+        <review_comments>sanitise</review_comments>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+    </pptConfig>
+    <xlsConfig>
+    <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <embedded_files>sanitise</embedded_files>
+        <embedded_images>sanitise</embedded_images>
+        <review_comments>sanitise</review_comments>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+    </xlsConfig>
+
+    <sysConfig>
+        <interchange_type>xml</interchange_type>
+        <interchange_pretty>false</interchange_pretty>
+    </sysConfig>
+
+    <textSearchConfig>
+		<textList>
+			<textItem>
+			  <text>top secret</text>
+			  <textSetting replacementChar="A">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>abode</text>
+			  <textSetting replacementChar="B">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>\accompanied</text>
+			  <textSetting replacementChar="D">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>fist.block</text>
+			  <textSetting replacementChar="E">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>acquire</text>
+			  <textSetting replacementChar="F">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>acquitted</text>
+			  <textSetting replacementChar="G">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>name@domain</text>
+			  <textSetting replacementChar="H">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>multi-talented</text>
+			  <textSetting replacementChar="I">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>adopted!</text>
+			  <textSetting replacementChar="J">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>advanced?</text>
+			  <textSetting replacementChar="K">redact</textSetting>
+			</textItem>
+			<textItem>
+			  <text>Cert\ainly</text>
+			  <textSetting replacementChar="L">redact</textSetting>
+			</textItem>
+		</textList>
+	</textSearchConfig>
+
+</config>
+

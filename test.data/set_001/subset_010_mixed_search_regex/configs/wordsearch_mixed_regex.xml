@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <pdfConfig>
+     <watermark>Glasswall Protected</watermark>
+        <acroform>sanitise</acroform>
+        <metadata>sanitise</metadata>
+        <javascript>sanitise</javascript>
+        <actions_all>sanitise</actions_all>
+        <embedded_files>sanitise</embedded_files>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+        <embedded_images>sanitise</embedded_images>
+    </pdfConfig>
+    <wordConfig>
+      <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <embedded_files>sanitise</embedded_files>
+        <embedded_images>sanitise</embedded_images>
+        <review_comments>sanitise</review_comments>
+        <dynamic_data_exchange>sanitise</dynamic_data_exchange>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+    </wordConfig>
+    <pptConfig>
+     <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <embedded_files>sanitise</embedded_files>
+        <embedded_images>sanitise</embedded_images>
+        <review_comments>sanitise</review_comments>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+    </pptConfig>
+    <xlsConfig>
+    <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <embedded_files>sanitise</embedded_files>
+        <embedded_images>sanitise</embedded_images>
+        <review_comments>sanitise</review_comments>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+    </xlsConfig>
+
+    <sysConfig>
+        <interchange_type>xml</interchange_type>
+        <interchange_pretty>false</interchange_pretty>
+    </sysConfig>
+
+    <textSearchConfig>
+		<textList>
+            <textItem><regex>12/abcd/34\\def</regex><textSetting replacementChar="*">redact</textSetting></textItem>
+            <textItem><regex>(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})</regex><textSetting replacementChar="+">redact</textSetting></textItem>
+            <textItem><regex>\B(\#[a-zA-Z]+\b)(?!;)</regex><textSetting replacementChar="@">redact</textSetting></textItem>
+		</textList>
+	</textSearchConfig>
+  
+</config>
+

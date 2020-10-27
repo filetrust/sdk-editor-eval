@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <pdfConfig>
+     <watermark>Glasswall Protected</watermark>
+        <acroform>sanitise</acroform>
+        <metadata>sanitise</metadata>
+        <javascript>sanitise</javascript>
+        <actions_all>sanitise</actions_all>
+        <embedded_files>sanitise</embedded_files>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+        <embedded_images>sanitise</embedded_images>
+    </pdfConfig>
+    <wordConfig>
+      <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <embedded_files>sanitise</embedded_files>
+        <embedded_images>sanitise</embedded_images>
+        <review_comments>sanitise</review_comments>
+        <dynamic_data_exchange>sanitise</dynamic_data_exchange>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+    </wordConfig>
+    <pptConfig>
+     <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <embedded_files>sanitise</embedded_files>
+        <embedded_images>sanitise</embedded_images>
+        <review_comments>sanitise</review_comments>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+    </pptConfig>
+    <xlsConfig>
+    <macros>sanitise</macros>
+        <metadata>sanitise</metadata>
+        <embedded_files>sanitise</embedded_files>
+        <embedded_images>sanitise</embedded_images>
+        <review_comments>sanitise</review_comments>
+        <internal_hyperlinks>sanitise</internal_hyperlinks>
+        <external_hyperlinks>sanitise</external_hyperlinks>
+    </xlsConfig>
+
+    <sysConfig>
+        <interchange_type>xml</interchange_type>
+        <interchange_pretty>false</interchange_pretty>
+    </sysConfig>
+
+    <textSearchConfig>
+		<textList>
+            <textItem><regex>Godwin</regex><textSetting replacementChar="a">redact</textSetting></textItem>
+            <textItem><regex>July</regex><textSetting replacementChar="b">redact</textSetting></textItem>
+            <textItem><regex>EBook</regex><textSetting replacementChar="c">redact</textSetting></textItem>
+            <textItem><regex>keeping</regex><textSetting replacementChar="d">redact</textSetting></textItem>
+            <textItem><regex>schiavi</regex><textSetting replacementChar="e">redact</textSetting></textItem>
+            <textItem><regex>shall</regex><textSetting replacementChar="f">redact</textSetting></textItem>
+            <textItem><regex>Ancient</regex><textSetting replacementChar="g">redact</textSetting></textItem>
+            <textItem><regex>Before</regex><textSetting replacementChar="h">redact</textSetting></textItem>
+            <textItem><regex>Certainly</regex><textSetting replacementChar="i">redact</textSetting></textItem>
+            <textItem><regex>Unhappy</regex><textSetting replacementChar="j">redact</textSetting></textItem>
+		</textList>
+	</textSearchConfig>
+
+</config>
+
