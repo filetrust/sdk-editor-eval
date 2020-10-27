@@ -20,6 +20,9 @@ For changes applicable to each version [Click Here](https://github.com/filetrust
 
 - For Glasswall Editor SDK documentation [Click Here](https://docs.glasswallsolutions.com/sdk/editor)
 - For Glasswall Command Line Tool documentation [Click Here](https://docs.glasswallsolutions.com/sdk/editor/Content/CLI/CLI-Test-Tool.htm)
+- For Glasswall Editor Word Search documentation [Click Here](https://github.com/filetrust/sdk-editor-eval/tree/master/libs/extensions/word.search)
+- For Glasswall Editor Archive Manager documentation [Click Here](https://github.com/filetrust/sdk-editor-eval/tree/master/libs/extensions/archive.manager)
+- For instructions on how to run Glasswall Editor in docker [Click Here](https://github.com/filetrust/sdk-editor-eval/tree/master/libs/extensions/docker)
 - README files within sub directories of the repository provide more information and guides for specific components and parts of the SDK.
 
 **NOTE:** Documentation for SDK wrappers and extensions to Glasswall Editor can be found in the Extensions section of the [Glasswall Editor documentation](https://docs.glasswallsolutions.com/sdk/editor).
