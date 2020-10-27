@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <pdfConfig>    
+    <watermark>Glasswall Protected</watermark>
+    <acroform>sanitise</acroform>
+    <metadata>sanitise</metadata>
+    <javascript>sanitise</javascript>
+    <actions_all>sanitise</actions_all>
+    <embedded_files>sanitise</embedded_files>
+    <internal_hyperlinks>sanitise</internal_hyperlinks>
+    <external_hyperlinks>sanitise</external_hyperlinks>
+  </pdfConfig>
+  
+  <wordConfig>
+    <macros>sanitise</macros>
+    <metadata>sanitise</metadata>
+    <embedded_files>sanitise</embedded_files>
+    <review_comments>sanitise</review_comments>
+    <internal_hyperlinks>sanitise</internal_hyperlinks>
+    <external_hyperlinks>sanitise</external_hyperlinks>
+  </wordConfig>
+  
+  <pptConfig>
+    <macros>sanitise</macros>
+    <metadata>allow</metadata>
+    <embedded_files>allow</embedded_files>
+    <review_comments>allow</review_comments>
+    <internal_hyperlinks>allow</internal_hyperlinks>
+    <external_hyperlinks>allow</external_hyperlinks>
+  </pptConfig>
+  
+  <xlsConfig>
+    <macros>sanitise</macros>
+    <metadata>sanitise</metadata>
+    <embedded_files>sanitise</embedded_files>
+    <review_comments>sanitise</review_comments>
+    <internal_hyperlinks>sanitise</internal_hyperlinks>
+    <external_hyperlinks>sanitise</external_hyperlinks>
+  </xlsConfig>  
+</config>
