@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <config>
-  <pdfConfig>    
+<pdfConfig>
     <watermark>Glasswall Protected</watermark>
     <acroform>sanitise</acroform>
     <metadata>sanitise</metadata>
@@ -9,32 +9,39 @@
     <embedded_files>sanitise</embedded_files>
     <internal_hyperlinks>sanitise</internal_hyperlinks>
     <external_hyperlinks>sanitise</external_hyperlinks>
-  </pdfConfig>
-  
-  <wordConfig>
+    <embedded_images>sanitise</embedded_images>
+</pdfConfig>
+<wordConfig>
     <macros>sanitise</macros>
     <metadata>sanitise</metadata>
     <embedded_files>sanitise</embedded_files>
+    <embedded_images>sanitise</embedded_images>
     <review_comments>sanitise</review_comments>
+    <dynamic_data_exchange>sanitise</dynamic_data_exchange>
     <internal_hyperlinks>sanitise</internal_hyperlinks>
     <external_hyperlinks>sanitise</external_hyperlinks>
-  </wordConfig>
-  
-  <pptConfig>
-    <macros>sanitise</macros>
-    <metadata>allow</metadata>
-    <embedded_files>allow</embedded_files>
-    <review_comments>allow</review_comments>
-    <internal_hyperlinks>allow</internal_hyperlinks>
-    <external_hyperlinks>allow</external_hyperlinks>
-  </pptConfig>
-  
-  <xlsConfig>
+</wordConfig>
+<pptConfig>
     <macros>sanitise</macros>
     <metadata>sanitise</metadata>
     <embedded_files>sanitise</embedded_files>
+    <embedded_images>sanitise</embedded_images>
     <review_comments>sanitise</review_comments>
     <internal_hyperlinks>sanitise</internal_hyperlinks>
     <external_hyperlinks>sanitise</external_hyperlinks>
-  </xlsConfig>  
+</pptConfig>
+<xlsConfig>
+    <macros>sanitise</macros>
+    <metadata>sanitise</metadata>
+    <embedded_files>sanitise</embedded_files>
+    <embedded_images>sanitise</embedded_images>
+    <review_comments>sanitise</review_comments>
+    <internal_hyperlinks>sanitise</internal_hyperlinks>
+    <external_hyperlinks>sanitise</external_hyperlinks>
+</xlsConfig>
+<sysConfig>
+    <interchange_type>xml</interchange_type>
+    <interchange_pretty>false</interchange_pretty>
+</sysConfig>
 </config>
+
