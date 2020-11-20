@@ -30,6 +30,22 @@ All notable changes to this project will be documented in this file.
 | Greater-than      | > |
 | Quotes            | " |
 
+
+## 2020-11-12
+
+### Editor v2.126
+- Pre-release
+
+#### Documentation
+No Change.
+
+#### Other Improvements
+- Configuration option to pre-process with rebuild added.
+
+- Increased support for Alternate Content XML tags 
+in Office files (Increases regeneration rates)
+
+
 ## 2020-08-06
 
 ### Editor v2.91
