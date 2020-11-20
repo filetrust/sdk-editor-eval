@@ -8,7 +8,7 @@ Table below contains the version numbers for the libraries and tools in this rep
 
 | Name                                                 | Current Version    |
 |------------------------------------------------------|--------------------|
-| Glasswall Editor (libglasswall_core2.so)             | 2.122 (Interim)    |
+| Glasswall Editor (libglasswall_core2.so)             | 2.126 (Interim)    |
 | Word Search And Redact (libglasswall.word.search.so) | 0.15               |
 | Archive Manager (libglasswall.archive.manager.so)    | 0.10               |
 | Glasswall Command Line Tool (GWQtCLI)                | 0.11               |
