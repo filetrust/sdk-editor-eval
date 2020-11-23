@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://glasswall.com/namespace" xmlns:mstns="http://glasswall.com/namespace" xmlns="http://glasswall.com/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+
+	<!-- Definition of ContentGroup elements -->
+	<xs:element name="ContentItem" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TechnicalDescription" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="InstanceCount" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="TotalSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="AverageSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="MinSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1" />
+				<xs:element name="MaxSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="ContentItems" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ContentItem" msdata:Prefix="gw" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>	
+			<xs:attribute name="itemCount" form="unqualified" type="xs:integer"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="SanitisationItem" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TechnicalDescription" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="SanitisationId" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>   				
+				<xs:element name="InstanceCount" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="TotalSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="AverageSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="MinSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="MaxSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="SanitisationItems" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SanitisationItem" msdata:Prefix="gw" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="itemCount" form="unqualified" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="RemedyItem" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TechnicalDescription" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="InstanceCount" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="RemedyItems" msdata:Prefix="gw">
+		<xs:complexType>			
+			<xs:sequence>
+				<xs:element ref="RemedyItem" msdata:Prefix="gw" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>		
+			<xs:attribute name="itemCount" form="unqualified" type="xs:integer" />			
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="IssueItem" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+                <xs:element name="TechnicalDescription" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="IssueId" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>                
+				<xs:element name="InstanceCount" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="RiskLevel" msdata:Prefix="gw" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="IssueItems" msdata:Prefix="gw">
+		<xs:complexType>			
+			<xs:sequence>
+				<xs:element ref="IssueItem" msdata:Prefix="gw" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="itemCount" form="unqualified" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+	
+    <!-- Definition of ContentManagementPolicy elements -->
+	<xs:element name="ContentSwitch" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ContentName" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="ContentValue" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+    </xs:element>
+
+	<xs:element name="Camera" msdata:Prefix="gw">
+		<xs:complexType>			
+			<xs:sequence>
+				<xs:element ref="ContentSwitch" msdata:Prefix="gw" minOccurs="1" maxOccurs="100"/>
+			</xs:sequence>
+            <xs:attribute name="cameraName" form="unqualified" type="xs:string" />
+		</xs:complexType>
+	</xs:element>    
+
+	<!-- Definition of ContentGroups elements -->
+	<xs:element name="ContentGroup" msdata:Prefix="gw">
+		<xs:complexType>			
+			<xs:sequence>
+				<xs:element name="BriefDescription" msdata:Prefix="gw" type="xs:string" minOccurs="1" />
+				<xs:element ref="ContentItems" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="SanitisationItems" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="RemedyItems" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="IssueItems" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>	
+			<xs:attribute name="itemCount" form="unqualified" type="xs:integer" />			
+		</xs:complexType>
+	</xs:element>			
+					
+	<!-- Definition of ExternalData elements -->			
+	<xs:element name="Metadata" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="MetadataName" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="MetadataValue" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- Definition of Document Statistics elements -->
+	<xs:element name="DocumentSummary" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TotalSizeInBytes" msdata:Prefix="gw" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="FileType" msdata:Prefix="gw" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="Version" msdata:Prefix="gw" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="FileTypeDetectionMethod" msdata:Prefix="gw" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+		
+	<xs:element name="ContentManagementPolicy" msdata:Prefix="gw">
+	    <xs:complexType>
+		    <xs:sequence>
+    		    <xs:element ref="Camera" msdata:Prefix="gw" minOccurs="1" maxOccurs="100"/>
+            </xs:sequence>
+    	</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="ContentGroups" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ContentGroup" msdata:Prefix="gw" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>  
+			<xs:attribute name="groupCount" form="unqualified" type="xs:integer" />			
+		</xs:complexType>									
+	</xs:element>
+				
+	<xs:element name="ExternalData" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Metadata" msdata:Prefix="gw" minOccurs="1" maxOccurs="100"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+		
+	<!-- Definition of GWallInfo elements -->			
+	<xs:element name="DocumentStatistics" msdata:Prefix="gw">	
+		<xs:complexType>
+			 <xs:sequence>
+				<xs:element ref="DocumentSummary" msdata:Prefix="gw" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="IssueInformationGroups" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="ContentManagementPolicy" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="ContentGroups" msdata:Prefix="gw" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="ExtractedItems" msdata:Prefix="gw" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="ExternalData" msdata:Prefix="gw" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+            <xs:attribute name="engine" form="unqualified" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+    
+	<!-- Definition of IssueInformationGroups elements -->
+	<xs:element name="IssueInformationGroups" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="IssueInformationGroup" minOccurs="1" maxOccurs="unbounded" msdata:Prefix="gw"/>    
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Definition of IssueInformationGroup elements -->
+	<xs:element name="IssueInformationGroup" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="IssueIDRangeStart" type="xs:integer" msdata:Prefix="gw"/>
+				<xs:element name="IssueIDRangeEnd"   type="xs:integer" msdata:Prefix="gw"/>
+                <xs:element name="GroupDescription"  type="xs:string"  msdata:Prefix="gw"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+    
+	<!-- Definition of ExtractedItems elements -->
+	<xs:element name="ExtractedItems" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ExtractedItem" minOccurs="0" maxOccurs="unbounded" msdata:Prefix="gw"/>    
+			</xs:sequence>
+			<xs:attribute name="itemCount" form="unqualified" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+
+	<!-- Definition of ExtractedItem elements -->
+	<xs:element name="ExtractedItem" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ExtractedImage" minOccurs="0" maxOccurs="unbounded" msdata:Prefix="gw"/>
+			</xs:sequence>
+			<xs:attribute name="offset" form="unqualified" type="xs:string" />
+			<xs:attribute name="itemIndex" form="unqualified" type="xs:string" />
+			<xs:attribute name="location" form="unqualified" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+
+	<!-- Definition of ExtractedImage elements -->
+	<xs:element name="ExtractedImage" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Meta" minOccurs="0" maxOccurs="unbounded" msdata:Prefix="gw"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<!-- Definition of Meta elements -->
+	<xs:element name="Meta" msdata:Prefix="gw">
+		<xs:complexType>
+			<xs:attribute name="meta" form="unqualified" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+
+    <xs:element name="GWallInfo" msdata:IsDataSet="true" msdata:Locale="en-US" msdata:Prefix="gw">
+        <xs:complexType>
+			<xs:sequence>
+			<xs:element ref="DocumentStatistics" minOccurs="1" maxOccurs="unbounded" msdata:Prefix="gw"/>
+			</xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
