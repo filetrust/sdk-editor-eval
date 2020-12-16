@@ -1,0 +1,5 @@
+QMAKE_PRL_BUILD_DIR = /home/gw_build/agent/_work/3/s/src/core2.dll
+QMAKE_PRO_INPUT = core2.dll.pro
+QMAKE_PRL_TARGET = libglasswall_core2.so.2.0.0
+QMAKE_PRL_CONFIG = lex yacc exceptions depend_includepath testcase_targets import_plugins import_qpa_plugin file_copies qmake_use qt warn_on release link_prl incremental shared release linux unix posix gcc skip_target_version_ext create_prl no_install_prl create_pc c++11 have_target dll thread moc resources
+QMAKE_PRL_VERSION = 2.0.0.0
