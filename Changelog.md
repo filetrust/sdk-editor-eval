@@ -30,6 +30,24 @@ All notable changes to this project will be documented in this file.
 | Greater-than      | > |
 | Quotes            | " |
 
+## 2021-06-01
+
+### Editor v2.142
+- Pre-release
+
+#### Documentation
+No Change.
+
+#### Other Improvements
+- various import/export fixes.
+- Corrected XSD for analysis report.
+- Better determination of EMF and WMF images.
+
+### Wrod Search 1.3
+
+#### Other Improvements
+- Replace regex engine.
+- Improved unicode spport 
 
 ## 2020-11-12
 
