@@ -43,7 +43,7 @@ No Change.
 - Corrected XSD for analysis report.
 - Better determination of EMF and WMF images.
 
-### Wrod Search 1.3
+### Word Search 1.3
 
 #### Other Improvements
 - Replace regex engine.
