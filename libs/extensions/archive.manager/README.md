@@ -27,11 +27,18 @@ The input archive is decompressed, each file within the archive is passed to the
 ### Protect
 The input archive is decompressed, each file within the archive is passed to the Glasswall CDR engine for processing in protect mode, the regenerated files are repackaged in a new archive while preserving the original directory structure.
 
-### Export
-The input archive is decompressed, each file within the archive is passed to the Glasswall engine for processing in export mode. Each export package will consist of XML/SISL files which make up each processed input file. The resulting export packages are repackaged in a new archive while preserving the original directory structure.
+### Export and Import
+The Glasswall engine provides the ability to export and import the engine's internal representation of a file structure in an intermediate format such as XML or SISL. This allows internal components of a file to be made available to external programs for additional processing, before recomposing the file to include those externally modified components with a call to **import** API.
+#### Export
+Files are processed as follows in this mode: 
+- The input archive is decompressed 
+- Each file within the archive is passed to the Glasswall engine for processing in export mode. Each export package will consist of XML/SISL files which make up each processed input file. 
+- The resulting export packages are repackaged in a new archive while preserving the original directory structure.
 
-### Import
-The input archive is decompressed, each export package within the archive is passed to the Glasswall engine for processing in import mode, the resulting generated files are repackaged in a new archive while preserving the original directory structure. 
+#### Import
+Files are processed as follows in this mode: 
+- The input archive is decompressed
+- Each export package within the archive is passed to the Glasswall engine for processing in import mode, the resulting generated files are repackaged in a new archive while preserving the original directory structure. 
 
 ## Configuration Example
 ```
@@ -140,7 +147,7 @@ status_t GwFileAnalysisArchive(
 
 ### GwFileExportArchive
 
-This is used to call the archive manager, process the specified input archive and produce a package (archive) containing export packages for each of the processed files. 
+This is used to call the archive manager, process the specified input archive and produce **export** packages containing the internals of a each file within the archive. 
 
 ```
 status_t GwFileExportArchive(
@@ -168,7 +175,7 @@ status_t GwFileExportArchive(
 
 ### GwFileImportArchive
 
-This is used to call the archive manager, process each export package and produce an output archive.
+This is used to call the archive manager, process each **export package** (containing internals of each file) and regenerate output archive containing reconstructed files.
 
 ```
 status_t GwFileImportArchive(
