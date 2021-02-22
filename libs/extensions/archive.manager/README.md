@@ -29,6 +29,9 @@ The input archive is decompressed, each file within the archive is passed to the
 
 ### Export and Import
 The Glasswall engine provides the ability to export and import the engine's internal representation of a file structure in an intermediate format such as XML or SISL. This allows internal components of a file to be made available to external programs for additional processing, before recomposing the file to include those externally modified components with a call to **import** API.
+
+**NOTE:** These modes are only supported when the archive manager is used with the Editor SDK.
+
 #### Export
 Files are processed as follows in this mode: 
 - The input archive is decompressed 
