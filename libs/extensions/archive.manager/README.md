@@ -150,7 +150,7 @@ status_t GwFileAnalysisArchive(
 
 ### GwFileExportArchive
 
-This is used to call the archive manager, process the specified input archive and produce **export** packages containing the internals of a each file within the archive. 
+This is used to call the archive manager, process the specified input archive and produce **export** packages containing the internals of a each file within the archive, as well as a general report for the input archive.
 
 ```
 status_t GwFileExportArchive(
@@ -178,7 +178,7 @@ status_t GwFileExportArchive(
 
 ### GwFileImportArchive
 
-This is used to call the archive manager, process each **export package** (containing internals of each file) and regenerate output archive containing reconstructed files.
+This is used to call the archive manager, process each **export package** (containing internals of each file) and regenerate output archive containing reconstructed files, as well as a general report for the input archive.
 
 ```
 status_t GwFileImportArchive(
@@ -188,7 +188,8 @@ status_t GwFileImportArchive(
     size_t *outputFileBufferLength, 
     void **outputReportBuffer, 
     size_t *outputReportBufferLength, 
-    const char *xmlConfigString
+    const char *xmlConfigString,
+	int includeAnalysisReports
     )
 ```
 
@@ -201,6 +202,7 @@ status_t GwFileImportArchive(
 | outputReportBuffer       | `void **`      | Out       | A pointer to a pointer to a buffer that will be populated with the archive manager report buffer. This buffer is allocated by the archive manager|
 | outputReportBufferLength | `size_t *`     | Out       | A pointer to the size of the archive manager report. This will be set by the archive manager                                                     |
 | xmlConfigString          | `const char *` | In        | A pointer to the buffer containing the content management XML file. This buffer needs to be null terminated                                      |
+| includeAnalysisReports   | `int`          | In        | A switch to enable an Editor XML analysis report for each imported file.                                                                         |                           
 
 ### GwArchiveDone
 
