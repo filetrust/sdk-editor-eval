@@ -7,40 +7,27 @@
 #include <stddef.h>
 #endif
 
-typedef size_t Session; // TODO Change to SessionHandle
+typedef size_t Session_Handle;
 
-typedef enum Policy_format {
+typedef enum  {
     PF_XML = 0 // Default
-} Policy;
+} Policy_Format;
 
-typedef enum Analysis_format {
+typedef enum  {
     AF_XML = 0 // Default
-} Analysis;
+} Analysis_Format;
 
-typedef enum SerializationFormat {
+typedef enum  {
     SF_XML = 0, // Default
     SF_SISL = 1
-} Serialization;
+} Serialization_Format;
 
-typedef enum SessionRunMode {
+typedef enum  {
     SM_EDITORONLY = 0, // Default
     SM_REBUILDONLY = 1,
     SM_REBUILD_EDITOR = 2,
     SM_UNDEFINED = 0xff // used to mark it not yet been assigned to a copy.
-} SessionRun;
+} Session_Run_Mode;
 
-
-typedef enum SessionFileTypes {
-    SessionConfig,
-    SessionInput,
-    SessionOutput,
-    SessionAnalysis,
-    SessionReport,
-    SessionImport,
-    SessionExport,
-    SessionIssueInfo,
-    SessionProcessStatus,
-    SessionFileErrorMsg
-} SessionRegTypes_t;
 
 #endif // SESSION_H
